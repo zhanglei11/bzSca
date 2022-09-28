@@ -12,7 +12,7 @@ program.version(require('./package.json').version);
 // 给help增加其他选项
 helpOptions();
 
-// 创建命令
+// 创建命令11111
 createCommands();
 
 // 解析终端指令
