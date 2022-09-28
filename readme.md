@@ -7,7 +7,7 @@
 如何安装？
 
 ```shell
-npm install bzCase -g
+npm install bzcase -g
 ```
 
 ## 创建项目
@@ -17,5 +17,5 @@ npm install bzCase -g
 创建项目指令
 
 ```shell
-bzCase create your_project_name
+bzcase create your_project_name
 ```
