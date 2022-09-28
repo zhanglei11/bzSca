@@ -1,10 +1,10 @@
 {
-  "name": "sca",
+  "name": "bzCase",
   "version": "1.1.0",
   "description": "CLI front-end development tools",
   "main": "index.js",
   "bin": {
-    "sca": "index.js"
+    "bzCase": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

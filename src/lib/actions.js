@@ -15,16 +15,7 @@ const createProject = async (project, otherArg) => {
 
   // 2.clone项目从仓库
   await downloadRepo(repoConfig.githubURL, project, { clone: true });
-
-  // // 3.执行终端命令npm install
-  // const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-  // await terminal.spawn(npm, ['install'], { cwd: `./${project}` });
-
-  // // 4.打开浏览器
-  // open('http://localhost:8080/');
-
-  // // 5.运行项目
-  // await terminal.spawn(npm, ['run', 'serve'], { cwd: `./${project}` });
+  
 }
 
 
