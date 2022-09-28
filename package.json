@@ -1,26 +1,23 @@
 {
-  "name": "coderwhy",
+  "name": "sca",
   "version": "1.1.0",
   "description": "CLI front-end development tools",
   "main": "index.js",
   "bin": {
-    "coderwhy": "index.js"
+    "sca": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "vue",
-    "react",
-    "CLI",
-    "component"
+    "vue"
   ],
-  "author": "coderwhy",
+  "author": "zhanglei",
   "license": "MIT",
-  "homepage": "https://github.com/coderwhy/coderwhy",
+  "homepage": "www.baidu.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coderwhy/coderwhy"
+    "url": "www.baidu.com"
   },
   "dependencies": {
     "chalk": "^4.1.0",
