@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 const program = require('commander');
 
-const HelpOptions = require('./src/core/help');
-const createCommands = require('./src/core/create')
+const HelpOptions = require('./src/lib/help');
+const createCommands = require('./src/lib/create')
 
 // 定义显示模块的版本号
 program.version(require('./package.json').version);
