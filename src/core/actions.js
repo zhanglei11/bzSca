@@ -9,14 +9,14 @@ const open = require('open');
 const log = require('../utils/log');
 const terminal = require('../utils/terminal');
 const { ejsCompile, writeFile, mkdirSync } = require('../utils/file');
-const repoConfig = require('../config/repo_config');
+const repoConfig = require('../config');
 
 const createProject = async (project, otherArg) => {
   // 1.提示信息
-  log.hint('coderwhy helps you create your project, please wait a moment~');
+  log.messageBlue('正在帮你下载项目，请耐心等待~');
 
   // 2.clone项目从仓库
-  await downloadRepo(repoConfig.vueGitRepo, project, { clone: true });
+  await downloadRepo(repoConfig.githubURL, project, { clone: true });
 
   // // 3.执行终端命令npm install
   // // terminal.exec('npm install', {cwd: `./${project}`});
@@ -34,7 +34,6 @@ const handleEjsToFile = async (name, dest, template, filename) => {
   // 1.获取模块引擎的路径
   const templatePath = path.resolve(__dirname, template);
   const result = await ejsCompile(templatePath, {name, lowerName: name.toLowerCase()});
-
   // 2.写入文件中
   // 判断文件不存在,那么就创建文件
   mkdirSync(dest);

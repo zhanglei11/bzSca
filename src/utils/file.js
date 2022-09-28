@@ -18,7 +18,7 @@ const ejsCompile = (templatePath, data={}, options = {}) => {
 
 const writeFile = (path, content) => {
   if (fs.existsSync(path)) {
-    log.error("the file already exists~")
+    log.messageRed('这个文件已经存在~')
     return;
   }
   return fs.promises.writeFile(path, content);
